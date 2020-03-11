@@ -21,5 +21,5 @@ class RunData:
 
 if __name__ == '__main__':
     run = RunData('广东','惠州')
-    #run.chage_data()
+    run.chage_data()
     run.get_data_chage_pic()
