@@ -1,5 +1,6 @@
 from getdatachagepic import Get_DataChage_pic
 from getcoupcityfromweb import GetWebData
+from getconf import Conf
 
 class RunData:
     def __init__(self,proivce,city):
@@ -20,6 +21,6 @@ class RunData:
         Get_DataChage_pic(self.province,self.city)
 
 if __name__ == '__main__':
-    run = RunData('广东','惠州')
-    run.chage_data()
+    run = RunData(Conf('config.conf').get_str('cc','country'),Conf('config.conf').get_str('cc','city'))
+    #run.chage_data()
     run.get_data_chage_pic()
