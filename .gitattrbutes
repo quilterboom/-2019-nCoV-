@@ -1,1 +1,1 @@
-*.sql linguist-language=python
+*.tsql linguist-language=python
