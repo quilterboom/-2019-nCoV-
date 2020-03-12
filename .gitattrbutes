@@ -1,1 +1,1 @@
-*.TSQL lingist-language=python
+*.sql lingist-language=python
